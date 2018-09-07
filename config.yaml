@@ -1,0 +1,30 @@
+trainingInput:
+  scaleTier: CUSTOM
+  masterType: 'standard_p100'
+  workerType: 'standard_p100'
+  parameterServerType: 'standard'
+  workerCount: 3
+  parameterServerCount: 2
+#hyperparameters:
+  #goal: MINIMIZE # Set to MINIMIZE or MAXIMIZE (e.g. rmse vs. accuracy)
+  #hyperparameterMetricTag: mse # Set to the name of the metric you assigned to the estimator
+  #enableTrialEarlyStopping: True
+  #maxTrials: 30
+  #maxParallelTrials: 4
+######### params to tune ##############
+  #params:
+    #- parameterName: learning-rate
+      #type: DOUBLE
+      #minValue: 0.0001
+      #maxValue: 0.01
+      #scaleType: UNIT_LOG_SCALE
+    #- parameterName: dropout-prob
+      #type: DOUBLE
+      #minValue: 0.1
+      #maxValue: 0.5
+      #scaleType: UNIT_LINEAR_SCALE
+    #- parameterName: l1-regularization
+      #type: DOUBLE
+      #minValue: 0.0001
+      #maxValue: 0.01
+      #scaleType: UNIT_LOG_SCALE
