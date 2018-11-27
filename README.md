@@ -1,4 +1,4 @@
-# ANIPIN
+# Wide-and-Deep Recommender
 
 ### Problem introduction
 
